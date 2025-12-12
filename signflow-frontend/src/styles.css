@@ -1,0 +1,242 @@
+:root
+{ 
+    --bg1:#f8fbff; 
+    --bg2:#fcf5ff; 
+    --card:#fff 
+}
+
+body
+{
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+    margin:0;
+    background:linear-gradient(180deg,var(--bg1),var(--bg2));
+}
+
+.app-root{
+    padding:48px
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:28px
+}
+
+.title
+{
+    font-size:48px;
+    color:#6b21a8;
+    margin:0
+}
+
+.subtitle
+{
+    color:#5b6b83;
+    margin-top:6px
+}
+
+.container
+{
+    max-width:1200px;
+    margin:0 auto
+}
+
+.grid
+{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px
+}
+
+.card
+{
+    background:var(--card);
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(20,30,50,0.06);
+    border:1px solid rgba(15,23,42,0.04)
+}
+
+.card.large
+{
+    min-height:260px
+}
+
+.card.wide
+{
+    margin-top:28px
+}
+
+.placeholder
+{
+    height:220px;
+    border:2px dashed #e6eef8;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9aa9c1
+}
+
+.signature-area
+{
+    padding:8px
+}
+
+.tabs
+{
+    display:flex;
+    gap:10px;
+    margin-bottom:12px
+}
+
+.tab
+{
+    padding:8px 12px;
+    border-radius:8px;
+    border:1px solid #eee;
+    background:#fafafa
+}
+
+.tab.active
+{
+    background:#fff
+}
+
+.signature-canvas
+{
+    height:180px;
+    border:1px solid #e6eef8;
+    border-radius:8px;
+    background:#fff
+}
+
+.signature-actions
+{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px
+}
+
+.btn
+{
+    padding:10px 16px;
+    border-radius:8px;
+    border:none;
+    background:#f3f4f6;
+    cursor:pointer
+}
+
+.btn.primary
+{
+    background:#0f172a;
+    color:#fff
+}
+
+.uploader
+{
+    border:2px dashed #e6eef8;
+    border-radius:12px;
+    height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:12px;
+    background:#fff
+}
+
+.upload-inner
+{
+    text-align:center
+}
+
+.upload-cta
+{
+    color:#8b9bb6;
+    margin-bottom:6px;
+    font-size:14px
+}
+
+.preview
+{
+    display:flex;
+    gap:16px;
+    margin-top:16px
+}
+
+.thumbs
+{
+    width:140px;
+    display:flex;
+    flex-direction:column;
+    gap:8px
+}
+
+.thumb
+{
+    width:120px;
+    border-radius:6px;
+    border:1px solid #e6eef8;
+    cursor:pointer;
+    transition:0.2s
+}
+
+.thumb:hover
+{
+    transform:scale(1.02)
+}
+
+.thumb.active
+{
+    outline:3px solid rgba(99,102,241,0.25)
+}
+
+.more
+{
+    padding:8px;
+    border-radius:6px;
+    border:1px dashed #e6eef8;
+    color:#6b7280;
+    text-align:center;
+    font-size:12px
+}
+
+.viewer
+{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative
+}
+
+.pdf-canvas
+{
+    box-shadow:0 4px 14px rgba(16,24,40,0.06);
+    border-radius:10px;
+    background:#fff
+}
+
+.canvas-wrap
+{
+    overflow:auto;
+    max-height:640px
+}
+
+.canvas-wrapper
+{
+    position:relative;
+    margin-bottom:18px
+}
+
+.overlay-capture
+{
+    position:absolute;
+    left:0;
+    top:0
+}
+
+.signature-preview-on-pdf
+{
+    position:absolute;
+    pointer-events:none
+}
